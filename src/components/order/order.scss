@@ -1,0 +1,142 @@
+.order {
+    background-image: url("../../images/Marketing_LandingFeatured_Redesign.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+
+    &-container {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        width: 200px;
+    }
+
+    &-title {
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    &-subtitle {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        max-width: 400px;
+        
+    }
+    &-title, 
+    &-subtitle {
+        text-align: center;
+    }
+
+    &-showcase {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &-request {
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
+        flex-direction: column;
+        width: 100%;
+        
+        
+
+        button {
+            margin-top: 1rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+       
+        input {
+            outline: none;
+            background-color: #b8b8b827;
+            color: white;
+            border-color: rgba(255, 255, 255, 0.647);
+        }
+
+        input, button {
+            padding: 1rem;
+            text-transform: uppercase;
+            border-radius: 7px;
+            
+        }
+    }
+}
+
+.view-map, 
+.terms-conditions {
+    text-align: center;
+    a {
+        
+        color: white;
+    }
+}
+
+.view-map {
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+}
+
+.terms-conditions {
+    font-size: 0.7rem;
+  
+    color: #888;
+    
+    a {
+        opacity: .7;
+    }
+}
+
+.scrollme {
+    animation: bounceEffect 1.5s infinite;
+    padding-top: 0.5rem ;
+
+    @keyframes bounceEffect {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        40% {
+            transform: translateY(2px);
+            opacity: 0.4;
+        }
+        60% {
+            transform: translateY(1px);
+            opacity: 0.6;
+        }
+        
+    }
+}
+
+/* Responsive Design for mobile */ 
+@media (min-width: 768px) {
+    .order {
+        &-request {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:center;
+
+            input {
+                flex: 1;
+            }
+
+            button {
+                padding: 1.1rem 3rem;
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
